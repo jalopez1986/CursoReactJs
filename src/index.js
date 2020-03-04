@@ -8,14 +8,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const jsx = <h1>Hello, Platzi Badges!</h1>;
-//hay una alternativa usando React.createElement
-const element = React.createElement('h1', {}, "Hola React CreateElement");
-const elementWithProps = React.createElement('a', {href: 'https://platzi.com'}, 'Ir a platzi');
+//const jsx = <h1>Hello, Platzi Badges!</h1>;
+//si queremos algo variable
+const name = 'Jorge';
+const sum = () => 3 + 3
+const jsx = <h1>Hello, Soy {name} mi edad {30 + 3} llamo funcion {sum()}</h1>;
+
 
 const container = document.getElementById('app');
 
 // ReactDOM.render(__qué__, __dónde__);
 
-ReactDOM.render(elementWithProps, container);
+ReactDOM.render(jsx, container);
 

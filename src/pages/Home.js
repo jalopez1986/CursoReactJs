@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import "./styles/Home.css";
 import { Link } from "react-router-dom";
+
+import "./styles/Home.css";
 
 import platziconfLogoImage from "../images/platziconf-logo.svg";
 import astronautsImage from "../images/astronauts.svg";
-export default class NotFound extends Component {
+
+export default class Home extends Component {
   render() {
     return (
       <div className="Home">
@@ -16,9 +18,9 @@ export default class NotFound extends Component {
                 alt="Platzi Conf Logo"
                 className="img-fluid mb-2"
               />
-              <h1>404: Not Found</h1>
-              <Link className="btn btn-primary" to="/">
-                Home
+              <h1>Badge Management System</h1>
+              <Link className="btn btn-primary" to="/badges">
+                Start
               </Link>
             </div>
 

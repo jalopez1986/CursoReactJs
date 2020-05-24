@@ -35,6 +35,10 @@ class Badges extends React.Component {
       return "Loading...";
     }
 
+    if (this.state.error) {
+      return `Error: ${this.state.error.message}`;
+    }
+
     return (
       <React.Fragment>
         <div className="Badges">

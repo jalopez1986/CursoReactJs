@@ -1,14 +1,8 @@
 import React from "react";
 
 class BadgeForm extends React.Component {
-  handleClick = e => {
+  handleClick = (e) => {
     console.log("Button was clicked");
-  };
-
-  handleSubmit = e => {
-    e.preventDefault();
-    console.log("Form was submited");
-    console.log(this.state);
   };
 
   render() {
@@ -16,7 +10,7 @@ class BadgeForm extends React.Component {
       <div>
         <h1>New Attendant</h1>
 
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.props.onSubmit}>
           <div className="form-group">
             <label>First Name</label>
             <input
